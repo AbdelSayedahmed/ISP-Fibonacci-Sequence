@@ -1,4 +1,4 @@
-# ISP-Fibonacci-Sequence
+# The Fibonacci Sequence
 ***By: Abdelrahman (Abdel) Sayedahmed 10.6 (Nights and Weekends)***
 
 ***
@@ -31,7 +31,7 @@ There are many uses for the Fibonacci Sequence in code. In JavaScript, you can u
 ***
 
 ### Algorithm description 
-***First implementation.***
+***First Implementation.***
 
 In this function, a single parameter {number} n is accepted. With the single parameter, the function returns the nth in the Fibonacci sequence. The time of the Fibonacci function is O(n). This is because the function uses a loop that iterates n times to generate the Fibonacci sequence up to the nth number. In each iteration of the loop, a constant amount of work is done (pushing a new element to the array), and the loop runs n times. Therefore, the overall time complexity is linear in terms of the input size, which is O(n). The space complexity of the function is also O(n) because it maintains an array (fiber) to store the Fibonacci sequence up to the nth number. The size of this array is directly proportional to the input value of n.
 
@@ -76,12 +76,12 @@ As mentioned before, for the second implementation, there is a chance the functi
 - https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 
 ***History and Summarization of Fibonacci***
-- [ChatGPT link here]
+- https://chat.openai.com/share/0ffd4876-67c2-4e7c-8f15-77060e40f841
 - https://en.wikipedia.org/wiki/Fibonacci_sequence#India
 - https://en.wikipedia.org/wiki/Fibonacci
 
 ***JS Code Links***
-- [ChatGPT link here]
+- https://chat.openai.com/share/0ffd4876-67c2-4e7c-8f15-77060e40f841
 - https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e
 - https://stackoverflow.com/questions/20726578/fibonacci-sequence-find-the-number-of-digits-javascript
 - https://en.m.wikipedia.org/wiki/Fibonacci_search_technique
