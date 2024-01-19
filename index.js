@@ -4,7 +4,7 @@ The value of the nth position is passed at the end
 */
 
 function fibonacci(n) {
-    if (n <= 0) { // Conditional to check if param {number} n is greater than 0.
+    if (!Number.isInteger(n) || n <= 0) { // Conditional to check if param {number} n is greater than 0 or if its even a number.
         return "Invalid input. Enter a number greater than 0."; // return {string} when condition is met.
     }
 
