@@ -1,6 +1,6 @@
 /*
-In this this function, a single parameter {number} n is accepted where n represents the nth position in the fibonacci sequence.
-The value of the nth position is passed at the end
+In this this function, a single parameter {number} n is accepted where n represents the nth position of a value in the fibonacci sequence.
+The value of the nth position is returned at the very end assuming the sequence is 0, 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144...
 */
 
 function fibonacci(n) {
