@@ -45,6 +45,10 @@ This one-liner is similar to the function but instead assumes the sequence 1, 1,
 
 <img src = "photos/func2.png" alt = "Fibonacci Spiral" width = "600" height = "auto">
 
+---
+
+***Third Implementation***
+
 ***
 ### Use Cases
 As mentioned before, there are many use cases for the Fibonacci sequence.
@@ -75,3 +79,4 @@ As mentioned before, for the second implementation, there is a chance the functi
 - https://chat.openai.com/share/0ffd4876-67c2-4e7c-8f15-77060e40f841
 - https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e
 - https://stackoverflow.com/questions/20726578/fibonacci-sequence-find-the-number-of-digits-javascript
+- https://en.m.wikipedia.org/wiki/Fibonacci_search_technique

@@ -32,3 +32,61 @@ console.log(fib(5)); // 5
 console.log(fib(12)); // 144
 console.log(fib(11)); // 89
 console.log(fib(10)); // 55
+
+/*
+This function takes a sorted array (arr) and an element to search for (x) {number}. It returns the index of the element if 
+found, or 'Element not found' if not found. The algorithm uses Fibonacci numbers to divide the array and perform the search efficiently.
+*/
+
+function fibonacciSearch(arr, x) {
+    const n = arr.length; // Initialize n and set it to be the length of arr
+
+    // Lines 44, 45, and 46 initializes three variables representing Fibonacci sequence terms.
+    let fibMMinus2 = 0;
+    let fibMMinus1 = 1;
+    let fibM = fibMMinus1 + fibMMinus2;
+
+    while (fibM < n) { // Loops to find the smallest Fibonacci number greater than or equal to n.
+        fibMMinus2 = fibMMinus1; //  Updates fibMMinus2 to the previous value of fibMMinus1.
+        fibMMinus1 = fibM; // Updates fibMMinus1 to the previous value of fibM.
+        fibM = fibMMinus1 + fibMMinus2; // Calculates the next Fibonacci number.
+    }
+
+    let offset = -1; // initializes the offset to -1.
+
+    while (fibM > 1) { // Loops based on Fibonacci numbers.
+        const i = Math.min(offset + fibMMinus2, n - 1); // Calculates the index i to compare with the target value x.
+
+        if (arr[i] < x) { // Updates variables for Fibonacci sequence if the current element is less than the target value.
+            fibM = fibMMinus1;
+            fibMMinus1 = fibMMinus2;
+            fibMMinus2 = fibM - fibMMinus1;
+            offset = i;
+        } else if (arr[i] > x) { // Updates variables for Fibonacci sequence if the current element is greater than the target value.
+            fibM = fibMMinus2;
+            fibMMinus1 = fibMMinus1 - fibMMinus2;
+            fibMMinus2 = fibM - fibMMinus1;
+        } else {
+            return `${x} is found at index ${i}`; // Returns the index if the target element is found.
+        }
+    }
+
+    if (fibMMinus1 === 1 && arr[offset + 1] === x) { // Checks a special case when the last Fibonacci number is 1 and the next element after the offset is the target element.
+        return `${x} is found at index ${offset + 1}`;
+    }
+
+    return 'Element not found'; // Returns 'Element not found' if the target element is not found.
+}
+
+const sortedArray1 = [1, 3, 5, 7, 9, 11, 13, 15];
+const sortedArray2 = [0.5, 2.1, 4.8, 6.3, 8.7, 10.2, 12.6, 14.9];
+const sortedArray3 = [-15, -12, -9, -6, -3, 0, 3, 6];
+
+console.log(fibonacciSearch(sortedArray1, 15)); // 15 is found at index 7
+console.log(fibonacciSearch(sortedArray1, 98)); // Element not found
+
+console.log(fibonacciSearch(sortedArray2, 4.8)); // 4.8 is found at index 2
+console.log(fibonacciSearch(sortedArray2, 48)); // Element not found
+
+console.log(fibonacciSearch(sortedArray3, -15)); // -15 is found at index 0
+console.log(fibonacciSearch(sortedArray3, -17)); // Element not found
