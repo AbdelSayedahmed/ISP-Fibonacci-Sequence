@@ -49,11 +49,16 @@ This one-liner is similar to the function but instead assumes the sequence 1, 1,
 
 ***Third Implementation***
 
+The Fibonacci search technique is a computer science method that uses a divide and conquer algorithm to search a sorted array using Fibonacci numbers. This method divides the array into two parts with consecutive Fibonacci numbers, reducing the number of comparisons needed by about 4%. However, it only requires addition and subtraction to calculate the indices of the accessed elements, unlike classical binary search which requires bit-shift, division, or multiplication. The Fibonacci search has on average- and worst-case complexity of O(log n). The Fibonacci search algorithm has a time complexity of O(log n), where n is the size of the sorted array. It narrows down the search range using exponentially growing Fibonacci numbers. In the worst case, it eliminates half of the remaining elements at each step, similar to binary search. However, Fibonacci search has a more gradual reduction in the search range, resulting in a time complexity of O(log n). Despite its logarithmic time complexity, it may be less efficient in practice compared to binary search.
+
+<img src = "photos/func3.png" alt = "Fibonacci Spiral" width = "450" height = "auto">
+
 ***
+
 ### Use Cases
 As mentioned before, there are many use cases for the Fibonacci sequence.
 - In algorithmic challenges, such as coding challenges and interview questions. Implementing algorithms related to the Fibonacci sequence can demonstrate your problem-solving skills and recursion skills.
-- In Mathematical Calculations. If your JavaScript application involves mathematical calculations or simulations where Fibonacci numbers are relevant, you might use the sequence.
+- In Mathematical Calculations. If your JavaScript application involves mathematical calculations or simulations where Fibonacci numbers are relevant, you might use the sequence. Also as represented in the third implantation, we can use the fibonacci sequence to sort through arrays more efficiently.
 - In Design and Aesthetics. The golden ratio, taken from the Fibonacci sequence, is considered aesthetically pleasing and is used in design. If you are working on web design or graphics in JS, you might use the Fibonacci sequence or the golden ratio.
 
 There are many other cases for the Fibonacci sequence in js. Maybe it can also be used for ideal farm breeding like what Bonacci did.
@@ -71,12 +76,12 @@ As mentioned before, for the second implementation, there is a chance the functi
 - https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
 
 ***History and Summarization of Fibonacci***
-- https://chat.openai.com/share/0ffd4876-67c2-4e7c-8f15-77060e40f841
+- [ChatGPT link here]
 - https://en.wikipedia.org/wiki/Fibonacci_sequence#India
 - https://en.wikipedia.org/wiki/Fibonacci
 
 ***JS Code Links***
-- https://chat.openai.com/share/0ffd4876-67c2-4e7c-8f15-77060e40f841
+- [ChatGPT link here]
 - https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e
 - https://stackoverflow.com/questions/20726578/fibonacci-sequence-find-the-number-of-digits-javascript
 - https://en.m.wikipedia.org/wiki/Fibonacci_search_technique
