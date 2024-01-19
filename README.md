@@ -23,3 +23,10 @@ There are many uses to the Fibonacci Sequence in code. In JavaScript, you can us
 - **Dynamic Programming:** Fibonacci sequence is often used as an example in dynamic programming. Implementing solutions for Fibonacci problems can help you understand and practice dynamic programming concepts.
 
     ![Fibonnaci Spiral](photos/fibonacci_spiral.gif)
+
+***Citations***
+- [ChatGPT link here]
+- https://www.youtube.com/shorts/OZnoTv_8TV4
+- https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
+- https://en.wikipedia.org/wiki/Fibonacci_sequence#India
+- https://en.wikipedia.org/wiki/Fibonacci
