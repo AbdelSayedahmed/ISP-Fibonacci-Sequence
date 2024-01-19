@@ -1,5 +1,7 @@
 # ISP-Fibonacci-Sequence
-***By: Abdelrahman (Abdel) Sayedahmed***
+***By: Abdelrahman (Abdel) Sayedahmed 10.6 (Nights and Weekends)***
+
+***
 
 ### A Brief History
 
@@ -49,7 +51,12 @@ function fibonacci(n) {
     return fibArr[n - 1]; 
 }
 ```
+***Second Implementation***
 
+This one liner is similar to the function but instead assumes the sequence 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144... In this one-liner we return n if the number is less than or equal to 1. If the number is greater than 1, the function recursively calls itself with fib(n - 1) and fib(n - 2) and sums the results. This recursion continues until it reaches the base case. However, it's important to note that this recursive implementation has exponential time complexity O(2^n). This is when, for each call, two additional recursive calls are made, leading to an exponential number of function calls. As a result, it may become inefficient for larger values of n.
+```
+const fibonacci = (n) => (n <= 1 ? n : fibonacci(n - 1) + fibonacci(n - 2));
+```
 ***
 
 ### Citations
@@ -63,3 +70,7 @@ function fibonacci(n) {
 - [ChatGPT link here]
 - https://en.wikipedia.org/wiki/Fibonacci_sequence#India
 - https://en.wikipedia.org/wiki/Fibonacci
+
+***JS Code Links***
+- https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e
+- 
