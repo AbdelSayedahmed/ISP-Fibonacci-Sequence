@@ -97,3 +97,4 @@ function fibonacci(n) {
   
   console.log(fibonacciSearch(sortedArray3, -15)); // -15 is found at index 0
   console.log(fibonacciSearch(sortedArray3, -17)); // Element not found  
+  
