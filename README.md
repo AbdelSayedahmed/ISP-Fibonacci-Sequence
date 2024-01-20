@@ -88,3 +88,9 @@ For the first and second implementation, there is a chance the function will not
 - https://medium.com/developers-writing/fibonacci-sequence-algorithm-in-javascript-b253dc7e320e
 - https://stackoverflow.com/questions/20726578/fibonacci-sequence-find-the-number-of-digits-javascript
 - https://en.m.wikipedia.org/wiki/Fibonacci_search_technique
+
+***
+### Other Links
+Google Slides: https://docs.google.com/presentation/d/1oe7ceX4KHwBBYzLo62MBxWfymF5ZTm_cKgouJIx_6Xs/edit?usp=sharing
+Google Docs: https://docs.google.com/document/d/1GuAISnn5UQbFst69sS3toeakh3zdjCTUJkON1YMqmIg/edit?usp=sharing
+GitHub: https://github.com/AbdelSayedahmed/ISP-Fibonacci-Sequence
