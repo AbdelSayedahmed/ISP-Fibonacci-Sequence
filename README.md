@@ -14,6 +14,8 @@ The Fibonacci sequence appears in the book The Book of Calculation by Fibonacci 
 
 At the end of the nth month, the number of pairs of rabbits is equal to the number of mature pairs (that is, the number of pairs in month n – 2) plus the number of pairs alive last month (month n – 1). The number in the nth month is the nth Fibonacci number.
 
+<img src = "photos/rabbit_diagram.jpg" alt = "Fibonacci Spiral" width = "500" height = "auto">
+
 ***
 
 ### The purpose of The Fibonacci Sequence
@@ -26,7 +28,7 @@ There are many uses for the Fibonacci Sequence in code. In JavaScript, you can u
 
 - **Dynamic Programming:** The Fibonacci sequence is often used as an example of dynamic programming. Implementing solutions for Fibonacci problems can help you understand and practice dynamic programming concepts.
 
-    <img src = "photos/fibonacci_spiral.gif" alt = "Fibonacci Spiral" width = "350" height = "auto">
+    <img src = "photos/fibonacci_spiral.gif" alt = "Fibonacci Spiral" width = "400" height = "auto">
 
 ***
 
@@ -35,7 +37,7 @@ There are many uses for the Fibonacci Sequence in code. In JavaScript, you can u
 
 In this function, a single parameter {number} n is accepted. With the single parameter, the function returns the nth in the Fibonacci sequence. The time of the Fibonacci function is O(n). This is because the function uses a loop that iterates n times to generate the Fibonacci sequence up to the nth number. In each iteration of the loop, a constant amount of work is done (pushing a new element to the array), and the loop runs n times. Therefore, the overall time complexity is linear in terms of the input size, which is O(n). The space complexity of the function is also O(n) because it maintains an array (fiber) to store the Fibonacci sequence up to the nth number. The size of this array is directly proportional to the input value of n.
 
-<img src = "photos/func1.png" alt = "Fibonacci Spiral" width = "600" height = "auto">
+<img src = "photos/func1.png" alt = "Fibonacci Spiral" width = "1000" height = "auto">
 
 ---
 
@@ -43,7 +45,7 @@ In this function, a single parameter {number} n is accepted. With the single par
 
 This one-liner is similar to the function but instead assumes the sequence 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144... In this one-liner, we return n if the number is less than or equal to 1. If the number is greater than 1, the function recursively calls itself with fib(n - 1) and fib(n - 2) and sums the results. This recursion continues until it reaches the base case. However, it's important to note that this recursive implementation has exponential time complexity O(2^n). This is when, for each call, two additional recursive calls are made, leading to an exponential number of function calls. As a result, it may become inefficient for larger values of n.
 
-<img src = "photos/func2.png" alt = "Fibonacci Spiral" width = "600" height = "auto">
+<img src = "photos/func2.png" alt = "Fibonacci Spiral" width = "1000" height = "auto">
 
 ---
 
@@ -51,7 +53,7 @@ This one-liner is similar to the function but instead assumes the sequence 1, 1,
 
 The Fibonacci search technique is a computer science method that uses a divide and conquer algorithm to search a sorted array using Fibonacci numbers. This method divides the array into two parts with consecutive Fibonacci numbers, reducing the number of comparisons needed by about 4%. However, it only requires addition and subtraction to calculate the indices of the accessed elements, unlike classical binary search which requires bit-shift, division, or multiplication. The Fibonacci search has on average- and worst-case complexity of O(log n). The Fibonacci search algorithm has a time complexity of O(log n), where n is the size of the sorted array. It narrows down the search range using exponentially growing Fibonacci numbers. In the worst case, it eliminates half of the remaining elements at each step, similar to binary search. However, Fibonacci search has a more gradual reduction in the search range, resulting in a time complexity of O(log n). Despite its logarithmic time complexity, it may be less efficient in practice compared to binary search.
 
-<img src = "photos/func3.png" alt = "Fibonacci Spiral" width = "450" height = "auto">
+<img src = "photos/func3.png" alt = "Fibonacci Spiral" width = "1000" height = "auto">
 
 ***
 
@@ -65,7 +67,7 @@ There are many other cases for the Fibonacci sequence in js. Maybe it can also b
 
 ***
 ### Edge Cases and Concerns
-As mentioned before, for the second implementation, there is a chance the function will not give the correct result, for higher n values, because of its time complexity. As for the first implementation, the only concern is large n values because they can cause overflow issues. For the third implementation, the Fibonacci search algorithm is designed to handle various edge cases, including empty arrays, single element arrays, elements at the beginning or end, nonexistent elements, non-integer inputs, and large input sizes. The algorithm should handle empty arrays and return appropriate results. If the array contains only one element, the search should return 0 if present.
+For the first and second implementation, there is a chance the function will not give the correct result, for higher n values, because of its time complexity and/or cause overflow issues . As for the third implementation, the Fibonacci search algorithm is designed to handle various edge cases, including empty arrays, single element arrays, elements at the beginning or end, nonexistent elements, non-integer inputs, and large input sizes. The algorithm should handle empty arrays and return appropriate results. If the array contains only one element, the search should return 0 if present.
 
 ***
 ### Citations
@@ -74,6 +76,7 @@ As mentioned before, for the second implementation, there is a chance the functi
 - https://docs.github.com/en/get-started/writing-on-github/getting-started-with-writing-and-formatting-on-github/basic-writing-and-formatting-syntax
 - https://byby.dev/md-image-size
 - https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker
+- https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode
 
 ***History and Summarization of Fibonacci***
 - https://chat.openai.com/share/0ffd4876-67c2-4e7c-8f15-77060e40f841
