@@ -37,7 +37,7 @@ There are many uses for the Fibonacci Sequence in code. In JavaScript, you can u
 
 In this function, a single parameter {number} n is accepted. With the single parameter, the function returns the nth in the Fibonacci sequence. The time of the Fibonacci function is O(n). This is because the function uses a loop that iterates n times to generate the Fibonacci sequence up to the nth number. In each iteration of the loop, a constant amount of work is done (pushing a new element to the array), and the loop runs n times. Therefore, the overall time complexity is linear in terms of the input size, which is O(n). The space complexity of the function is also O(n) because it maintains an array (fiber) to store the Fibonacci sequence up to the nth number. The size of this array is directly proportional to the input value of n.
 
-```
+```js
 function fibonacci(n) {
   if (!Number.isInteger(n) || n <= 0) {
     return "Invalid input. Enter a number greater than 0.";
@@ -59,7 +59,7 @@ function fibonacci(n) {
 
 This one-liner is similar to the function but instead assumes the sequence 1, 1, 2, 3, 5, 8, 13, 21, 34, 55, 89, 144... In this one-liner, we return n if the number is less than or equal to 1. If the number is greater than 1, the function recursively calls itself with fib(n - 1) and fib(n - 2) and sums the results. This recursion continues until it reaches the base case. However, it's important to note that this recursive implementation has exponential time complexity O(2^n). This is when, for each call, two additional recursive calls are made, leading to an exponential number of function calls. As a result, it may become inefficient for larger values of n.
 
-```
+```js
 const fib = (n) => !Number.isInteger(n) || n <= 1 ? n : fib(n - 1) + fib(n - 2);
 ```
 ---
@@ -68,7 +68,7 @@ const fib = (n) => !Number.isInteger(n) || n <= 1 ? n : fib(n - 1) + fib(n - 2);
 
 The Fibonacci search technique is a computer science method that uses a divide and conquer algorithm to search a sorted array using Fibonacci numbers. This method divides the array into two parts with consecutive Fibonacci numbers, reducing the number of comparisons needed by about 4%. However, it only requires addition and subtraction to calculate the indices of the accessed elements, unlike classical binary search which requires bit-shift, division, or multiplication. The Fibonacci search has on average- and worst-case complexity of O(log n). The Fibonacci search algorithm has a time complexity of O(log n), where n is the size of the sorted array. It narrows down the search range using exponentially growing Fibonacci numbers. In the worst case, it eliminates half of the remaining elements at each step, similar to binary search. However, Fibonacci search has a more gradual reduction in the search range, resulting in a time complexity of O(log n). Despite its logarithmic time complexity, it may be less efficient in practice compared to binary search.
 
-```
+```js
 function fibonacciSearch(arr, x) {
   const n = arr.length;
 
