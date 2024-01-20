@@ -91,6 +91,6 @@ For the first and second implementation, there is a chance the function will not
 
 ***
 ### Other Links
-Google Slides: https://docs.google.com/presentation/d/1oe7ceX4KHwBBYzLo62MBxWfymF5ZTm_cKgouJIx_6Xs/edit?usp=sharing
-Google Docs: https://docs.google.com/document/d/1GuAISnn5UQbFst69sS3toeakh3zdjCTUJkON1YMqmIg/edit?usp=sharing
-GitHub: https://github.com/AbdelSayedahmed/ISP-Fibonacci-Sequence
+- Google Slides: https://docs.google.com/presentation/d/1oe7ceX4KHwBBYzLo62MBxWfymF5ZTm_cKgouJIx_6Xs/edit?usp=sharing
+- Google Docs: https://docs.google.com/document/d/1GuAISnn5UQbFst69sS3toeakh3zdjCTUJkON1YMqmIg/edit?usp=sharing
+- GitHub: https://github.com/AbdelSayedahmed/ISP-Fibonacci-Sequence
